@@ -1,0 +1,10 @@
+.mySwiper {
+  width: 100%;
+  height: 900px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
