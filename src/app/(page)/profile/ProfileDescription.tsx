@@ -1,11 +1,13 @@
 import React from 'react'
-import { geistSans } from '@/config/fonts'
+import { GeistSans } from '@/config/fonts'
 import Image from 'next/image'
+import { BrandIcons } from '@/components/ui/brand-icon/BrandIcons'
 
 export const ProfileDescription = () => {
   return (
+    <div> 
+      <BrandIcons />
     <div className="grid md:grid-cols-2 justify-items-center items-center py-10">
-        
         <div>
             <Image 
                 src={"/Perfil/perfil.jpg"}
@@ -18,7 +20,7 @@ export const ProfileDescription = () => {
         </div>
         {/* Text Description */}
         <div>
-        <p className={`${geistSans.className} text-black antialiased  text-xl`}>
+        <p className={`${GeistSans.className} text-black antialiased  text-xl`}>
         Con más de 10 años de experiencia en acabados de madera, Edward ha dedicado su trayectoria
          a transformar espacios interiores con calidad, precisión y buen gusto. A través de su empresa
          El Paisa, ha trabajado en cocinas, salas, pisos y diversos proyectos residenciales, cuidando cada
@@ -33,8 +35,7 @@ En El Paisa, la confianza se construye con resultados reales, cumplimiento y un 
   que elevan el valor de su hogar.
         </p>
         </div>
-    
-
+    </div>
     </div>
   )
 }

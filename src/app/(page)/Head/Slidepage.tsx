@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './slideshow.css';
+import { BrandStatement } from '@/components/ui/brandState/BrandStatement';
 
 
 interface Props {
@@ -25,12 +26,13 @@ return (
     <Swiper
     spaceBetween={40}
         effect={'fade'}
-        navigation={true}
-        loop={true}
-        autoplay={{delay: 3000, disableOnInteraction: false,}}
-        pagination={{clickable: true,}}
+        fadeEffect={{crossFade:true}}
+        speed={2500}
+        navigation
+        loop
+        autoplay={{delay: 5000, disableOnInteraction: false,}}
         centeredSlides={true}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
+        modules={[EffectFade, Navigation,  Autoplay]}
         className="mySwiper"
     
     >
@@ -39,17 +41,47 @@ return (
         <SwiperSlide key={image}>
 
             <Image
-            width={1024}
-            height={900}
             src={image}
             alt={title}
-            className='rounded-lg object-fill'>
+            fill
+            priority
+            sizes='100vw'
+            className=''>
             </Image>
           
-
+            <div className="absolute inset-0 bg-black/30" />
         </SwiperSlide>
     ))}
     </Swiper>
+
+    <div className=' flex flex-col justify-center items-start
+    absolute
+  top-[45%] md:top-2/3
+  lg:top-auto lg:bottom-50 lg:left-10
+  left-1/2
+  transform -translate-x-1/2 -translate-y-1/2
+  lg:translate-x-0 lg:translate-y-0
+  
+  w-[95%] sm:w-[85%] md:w-[80%] lg:w-[40%]
+  gap-4 text-left z-20 px-10'>
+        <h1 className='text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 
+        text-white font-extrabold 
+        leading-tight'>Diseño, precisión y tradición</h1>
+    
+    <button className='mt-2 sm:mt-4 
+    px-6 py-3
+    sm:px-8 sm:py-4
+    lg:px-10 lg:py-5
+    sm:text-lg lg:text-xl
+    cursor-pointer
+    text-black
+    bg-white/50
+    shadow-[0_0_40px_rgba(0,0,0,0.5)]
+    transition-all duration-300
+    hover:scale-105'>
+        PORTAFOLIO
+    </button>
+    </div>
     </div>
 )
 }

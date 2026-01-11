@@ -6,9 +6,9 @@ import { GallerySection } from "./(page)/GallerySection/GallerySection";
 import { Footer } from "./(page)/Footer/footer";
 
 import { Whattsap } from "@/components/feature/whattsap/whattsap";
+import { BrandStatement } from "@/components/ui/brandState/BrandStatement";
 
 
-import { ModalSlider } from "@/components/modalSlider/ModalSlider";
 
 
 
@@ -19,17 +19,16 @@ export default function Home() {
       <section className="relative">
         <HeadSlide 
         title={"Gallery Images"}
-        images={ImageSeed.images}
+        images={ImageSeed.headSlide}
         className=""
         />
 
     </section>
-      <div className="mb-24">   
+    <BrandStatement />
 
-       
+
+      <div className="mb-24">   
         <ProfileDescription />
-    
-        
         <GallerySection
         text = "Pisos"
         images={ImageSeed.images}/>

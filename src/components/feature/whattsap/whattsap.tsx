@@ -14,13 +14,13 @@ const handleClick = () => {
     <div>
         <h1>Whattsap</h1>
         <div onClick={handleClick}
-        className='fixed z-50
+        className="fixed 
         bottom-4 right-4
         sm:bottom-6 sm:right-6
         md:bottom-30 md:right-30
         cursor-pointer
         transition-transform duration-300 ease-out
-        hover:-translate-y-0.5'>
+        hover:-translate-y-0.5">
         <Image 
         width={90}
         height={80}
