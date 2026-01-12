@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{
   children: React.ReactNode}>) {
   return (
-    <html lang="en">
+    <html lang="es" className="scroll-smooth">
       <body>
-        <div className="relative h-screen">
+        <div className="relative h-screen text-neutral-900">
       <HeadTitle />
         {children}
         </div>

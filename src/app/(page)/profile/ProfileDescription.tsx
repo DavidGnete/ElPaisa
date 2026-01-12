@@ -1,39 +1,39 @@
 import React from 'react'
-import { GeistSans } from '@/config/fonts'
+import { GeistSans, CaveatStyle } from '@/config/fonts'
 import Image from 'next/image'
 import { BrandIcons } from '@/components/ui/brand-icon/BrandIcons'
 
 export const ProfileDescription = () => {
   return (
     <div> 
-      <BrandIcons />
-    <div className="grid md:grid-cols-2 justify-items-center items-center py-10">
-        <div>
+
+    <div className="flex flex-col justify-center items-center gap-16 md:gap-40 md:flex-row md:items-start">
+        <div className='shrink-0'>
             <Image 
-                src={"/Perfil/perfil.jpg"}
+                src={"/Perfil/profile.webp"}
                 alt={"Profile Image"}
                 width={400}
                 height={400}
-                className="rounded-lg"
+                className=" w-64 h-64 md:w-auto md:h-150  rounded-lg"
             />
 
         </div>
+
         {/* Text Description */}
-        <div>
-        <p className={`${GeistSans.className} text-black antialiased  text-xl`}>
-        Con más de 10 años de experiencia en acabados de madera, Edward ha dedicado su trayectoria
-         a transformar espacios interiores con calidad, precisión y buen gusto. A través de su empresa
-         El Paisa, ha trabajado en cocinas, salas, pisos y diversos proyectos residenciales, cuidando cada
-          detalle para lograr resultados duraderos y estéticamente impecables.
 
-Su trabajo se caracteriza por el uso de materiales de alta calidad, técnicas bien ejecutadas y un compromiso 
-constante con la satisfacción del cliente. Cada proyecto es tratado de manera personalizada, entendiendo las 
-necesidades de cada espacio y ofreciendo soluciones funcionales y elegantes.
+        <div className='max-w-xl '>
+          <h2 className='text-2xl md:text-3xl font-bold m-10 text-center  '>El Paisita</h2>
 
-En El Paisa, la confianza se construye con resultados reales, cumplimiento y un servicio honesto. Por eso,
- quienes eligen sus productos y servicios saben que están invirtiendo en experiencia, responsabilidad y acabados
-  que elevan el valor de su hogar.
+        <p className={`${GeistSans.className}  leading-relaxed text-base sm:text-lg md:text-xl`}>
+        Soy Eduard, maestro en acabados interiores en madera y fundador de <span className='font-bold'>El Paisita </span>
+        con más de 10 años de experiencia, he dedicado mi trabajo a transformar espacios en lugares cálidos,
+        funcionales y llenos de carácter, utilizando la madera como el elemento principal.<br></br>
+        Cada proyecto es personal. Escucho, propongo y trabajo cada detalle con precisión, porque creo que un
+        buen acabado no solo se ve bien, se siente bien. Cocinas, salas, pisos y espacios interiores toman vida
+        cuando se hacen con pasión, compromiso y respeto por el trabajo bien hecho.<br></br>
+        En El Paisita, no solo construimos acabados en madera: creamos espacios donde las personas disfrutan estar.
         </p>
+        <p className={`${CaveatStyle.className} leading-relaxed text-4xl font-normal mt-5`}> Ave maría, qué buen acabado.</p>
         </div>
     </div>
     </div>

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: ffffff;
   --foreground: #171717;
 }
@@ -11,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+ */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -28,15 +28,6 @@ body {
   height: 100%;
 }
 
-body {
-  background: white;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -47,7 +38,6 @@ body {
   font-size: 18px;
   background: #444;
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;

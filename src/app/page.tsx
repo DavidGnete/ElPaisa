@@ -7,10 +7,7 @@ import { Footer } from "./(page)/Footer/footer";
 
 import { Whattsap } from "@/components/feature/whattsap/whattsap";
 import { BrandStatement } from "@/components/ui/brandState/BrandStatement";
-
-
-
-
+import { BrandIcons } from "@/components/ui/brand-icon/BrandIcons";
 
 
 export default function Home() {
@@ -22,13 +19,14 @@ export default function Home() {
         images={ImageSeed.headSlide}
         className=""
         />
-
     </section>
-    <BrandStatement />
 
+    <div>    
+    <BrandStatement />
 
       <div className="mb-24">   
         <ProfileDescription />
+        <BrandIcons />
         <GallerySection
         text = "Pisos"
         images={ImageSeed.images}/>
@@ -40,6 +38,8 @@ export default function Home() {
         <Whattsap />
         <Footer />
         </div>
+
+    </div>
     </main>
   );
 }
