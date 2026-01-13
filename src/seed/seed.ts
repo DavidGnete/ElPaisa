@@ -21,10 +21,10 @@ export const ImageSeed : ImageContent = {
         
     ],
     "headSlide": [
-        "/head/acabado2.jpg",
-        "/head/acabado3.jpg",
-        "/head/acabado4.jpg",
-        "/head/acabado5.jpg",
+        "/head/acabado2.webp",
+        "/head/acabado3.webp",
+        "/head/acabado4.webp",
+        "/head/acabado5.webp",
     ],
     "icon": [
         "/icons/icono1.png",

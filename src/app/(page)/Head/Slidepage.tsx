@@ -38,13 +38,12 @@ return (
     >
     {
     images.map( image=>(
-        <SwiperSlide key={image} className='relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]'>
+        <SwiperSlide key={image} className='relative w-full '>
 
             <Image
             src={image}
             alt={title}
             fill
-            priority
             quality={100} 
             sizes='(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw'
             className='object-cover'>
