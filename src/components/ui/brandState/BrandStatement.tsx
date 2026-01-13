@@ -3,12 +3,14 @@ import { Geistmono,CaveatStyle } from '@/config/fonts';
 
 export const BrandStatement = () => {
   return (
-    <div className=" flex flex-col items-center  w-full bg-gray-100 ">
+    <div className='w-full bg-zinc-100 py-12 sm:py-16'> 
+
+  
 
       <div className='md:mt-10 w-full flex flex-col items-center '>
         
         {/* linea separadora */}
-        <div  className="w-full sm:w-190 h-px bg-neutral-400 mb-10 sm:mb-12" />
+        <div  className="w-full max-w-md sm:max-w-xl h-px bg-gray-300 mb-8 sm:mb-10" />
 
         <p className={`${CaveatStyle.className}
         text-black text-center
@@ -19,9 +21,10 @@ export const BrandStatement = () => {
           a las personas en su día de trabajo, generando verdaderas conexiones y provocando la transferencia de conocimiento
           entre nuestros usuarios.
         </p>
-        </div>
+      
 
-        <div  className="w-full max-w-4xl h-px bg-gray-300 mt-10 sm:mt-12  md:my-10" />
+        <div  className="w-full max-w-md sm:max-w-xl h-px bg-gray-300 mt-8 sm:mt-10" />
       </div>
+    </div>
   )
 }

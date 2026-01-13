@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export const BrandIcons = () => {
   return (
-    <div className='flex gap-60 justify-center bg-gray-600 items-center mt-20'>
+    <div className='flex gap-60 justify-center items-center mt-20 '>
         {ImageSeed.icon.map((icon, index)=> (
             <Image 
             key={index}

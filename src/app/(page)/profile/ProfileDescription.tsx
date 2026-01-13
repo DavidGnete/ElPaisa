@@ -28,17 +28,31 @@ export const ProfileDescription = () => {
         <div className='max-w-xl px-5 sm:px-6 md:px-0 mt-4'>
 
           <h2 className='hidden md:block text-2xl md:text-3xl font-semibold mb-5 text-center'>El Paisita</h2>
+        <div className="order-3 max-w-[90%] sm:max-w-xl px-5 sm:px-6 md:px-0 mt-4 md:text-left text-center">
 
-        <p className={`${GeistSans.className}  leading-relaxed text-base sm:text-lg md:text-xl`}>
-        Soy Eduard, maestro en acabados interiores en madera y fundador de <span className='font-bold'>El Paisita </span>
-        con más de 10 años de experiencia, he dedicado mi trabajo a transformar espacios en lugares cálidos,
-        funcionales y llenos de carácter, utilizando la madera como el elemento principal.<br></br>
-        Cada proyecto es personal. Escucho, propongo y trabajo cada detalle con precisión, porque creo que un
-        buen acabado no solo se ve bien, se siente bien. Cocinas, salas, pisos y espacios interiores toman vida
-        cuando se hacen con pasión, compromiso y respeto por el trabajo bien hecho.<br></br>
-        En El Paisita, no solo construimos acabados en madera: creamos espacios donde las personas disfrutan estar.
-        </p>
-        <p className={`${CaveatStyle.className} leading-relaxed text-4xl font-normal mt-5`}> Ave maría, qué buen acabado.</p>
+  <p className={`${GeistSans.className} leading-relaxed text-base sm:text-lg md:text-xl`}>
+    Soy Eduard, maestro en acabados interiores en madera y fundador de{" "}
+    <span className="font-semibold">El Paisita</span>, con más de 10 años de experiencia
+    transformando espacios en lugares cálidos, funcionales y llenos de carácter.
+  </p>
+
+  <p className={`${GeistSans.className} leading-relaxed text-base sm:text-lg md:text-xl mt-4`}>
+    Cada proyecto es personal. Escucho, propongo y trabajo cada detalle con precisión,
+    porque un buen acabado no solo se ve bien, se siente bien.
+  </p>
+
+  <p className={`${GeistSans.className} leading-relaxed text-base sm:text-lg md:text-xl mt-4`}>
+    Cocinas, salas, pisos y espacios interiores toman vida cuando se hacen con pasión,
+    compromiso y respeto por el trabajo bien hecho.
+  </p>
+
+  <p className={`${CaveatStyle.className} text-3xl sm:text-4xl font-normal mt-6`}>
+    Ave maría, qué buen acabado.
+  </p>
+
+</div>
+
+
         </div>
     </div>
     </div>
