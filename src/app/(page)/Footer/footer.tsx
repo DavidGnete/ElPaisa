@@ -27,13 +27,6 @@ export const Footer = () => {
             Privacidad & Legal
         </Link>
 
-        <Link 
-        href="/"
-        className='mx-3 font-bold'
-        >
-            ubicaciones 
-        </Link>
-        
         
 
     </div>

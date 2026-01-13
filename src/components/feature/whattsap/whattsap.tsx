@@ -12,7 +12,6 @@ const handleClick = () => {
 }
   return (
     <div>
-        <h1>Whattsap</h1>
         <div onClick={handleClick}
         className="fixed 
         bottom-4 right-4

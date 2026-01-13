@@ -27,7 +27,7 @@ export const ProfileDescription = () => {
         <div className="order-3 max-w-[90%] sm:max-w-xl px-5 sm:px-6 md:px-0 mt-4 md:text-left text-center">
 
   <p className={`${StyleSpectral.className} leading-relaxed text-base sm:text-lg md:text-xl`}>
-    Soy Eduard, maestro y diseñador en acabados interiores en madera y fundador de <br></br>
+    Soy Eduard, maestro y diseñador en acabados interiores en madera y fundador de 
     <span className="font-semibold">   El Paisita</span>, con más de 10 años de experiencia
     transformando espacios en lugares cálidos, funcionales y llenos de carácter.
   </p>
