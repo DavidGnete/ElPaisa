@@ -9,7 +9,7 @@ export const HeadTitle = () => {
     <nav className='absolute top-0 left-0 w-full z-50  '>
 
        {/*  linea separadora de el head */}
-        <div className="z-50 absolute top-30 lg:top-50 left-0 right-0 h-px bg-white" />
+        <div className="z-50 absolute top-30 lg:top-50 left-0 right-0 h-px bg-white/40" />
         
     <div className=' w-full px-5 sm:px-8 md:px-20 lg:px-20 xl:px-20 py-10 sm:py-6 lg:py-20 flex justify-center'>
 

@@ -54,22 +54,22 @@ return (
     ))}
     </Swiper>
 
-    <div className=' flex flex-col justify-center items-start
+    <div className='flex flex-col justify-center items-center
     absolute
-  top-[45%] md:top-2/3
-  lg:top-auto lg:bottom-50 lg:left-10
+  top-[85%] md:top-2/3
+  lg:top-[90%] lg:bottom-50 
   left-1/2
   transform -translate-x-1/2 -translate-y-1/2
-  lg:translate-x-0 lg:translate-y-0
   
-  w-[95%] sm:w-[85%] md:w-[80%] lg:w-[40%]
+  w-[95%] sm:w-[85%] md:w-[80%] lg:w-[95%]
   gap-4 text-left z-20 px-10'>
         <h1 className='text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 
         text-white font-extrabold 
         leading-tight'>Diseño, precisión y tradición</h1>
     
-    <button className='mt-2 sm:mt-4 
-    px-6 py-3
+    <button className=' sm:mt-4 
+    
+    px-7 py-3
     sm:px-8 sm:py-4
     lg:px-10 lg:py-5
     sm:text-lg lg:text-xl
@@ -81,7 +81,7 @@ return (
     hover:scale-105'>
         PORTAFOLIO
     </button>
-    </div>
+</div>
     </div>
 )
 }
