@@ -28,12 +28,16 @@ export default function Home() {
         <ProfileDescription />
         {/* <BrandIcons /> */}
         <GallerySection
-        text = "Pisos"
-        images={ImageSeed.images}/>
+        text = "Cocinas"
+        images={ImageSeed.cocinas}/>
 
         <GallerySection
-        text = "Cocinas"
-        images={ImageSeed.images}/>
+        text = "armarios"
+        images={ImageSeed.armarios}/>
+
+        <GallerySection
+        text = "baños"
+        images={ImageSeed.baños}/>
 
         <Whattsap />
         <Footer />

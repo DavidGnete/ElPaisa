@@ -1,5 +1,5 @@
 import React from 'react'
-import { Geist, Geist_Mono, Montserrat_Alternates, Merienda, Caveat } from 'next/font/google'
+import { Geist, Geist_Mono, Montserrat_Alternates, Merienda, Caveat, Spectral, Alumni_Sans_Pinstripe } from 'next/font/google'
 
 export const GeistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,4 +27,18 @@ export const CaveatStyle = Caveat({
   weight: [ "400", "600", "700"],
   variable: "--font-caveat",
 
+})
+
+export const StyleSpectral = Spectral({
+  subsets: ["latin-ext", "latin"],
+  weight: ["200","300","400", "500"],
+  style: ["normal","italic"],
+  variable: "--font-Spectral"
+})
+
+export const StyleAlumin = Alumni_Sans_Pinstripe({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400"],
+  style: ["italic", "normal"],
+  variable: "--sont-Alumni_Sans_Pinstripe"
 })

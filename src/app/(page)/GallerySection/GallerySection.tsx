@@ -1,5 +1,5 @@
 "use client";
-import { Image, image } from '@heroui/react';
+import Image from 'next/image';
 import { ModalSlider } from '@/components/modalSlider/ModalSlider';
 import { useState } from "react";
 
@@ -23,27 +23,28 @@ export const GallerySection = ({ images, text }: PhotoGalleryProps) => {
     setopenSlide(false)
   };
 
-
-
   return (
-    <section className="w-5/6 mx-auto py-10">
+    <section className='max-w-7xl mx-auto px-4 sm:px-6 py-16'>
         <h1 className="font-bold text-4xl text-black text-center">{text}</h1>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-20">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-8">
       {images.map((img, index) => (
-        <div key={img}
-        className="border border-gray-400 overflow-hidden cursor-pointer "
+        <div
+        key={img}
+        className="w-full aspect-square overflow-hidden cursor-pointer  group flex items-center justify-center"
         onClick={() => {
           openModal(index)
         }
         }>
 
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-300 " />
+        
           <Image
+          width={300}
+          height={400}
             src={img}
             alt="HeroUI Album Cover"
-            width={900}
-            height={500}
-            className="w-full object-cover hover:scale-140 transition"
+            className="w-full h-full object-cover  transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       ))}

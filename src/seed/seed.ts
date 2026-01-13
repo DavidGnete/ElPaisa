@@ -5,6 +5,9 @@ interface ImageContent {
     images: string[];
     headSlide: string[];
     icon: string[];
+    armarios:string[];
+    baños:string[];
+    cocinas:string[];
 }
 
 export const ImageSeed : ImageContent = {
@@ -28,10 +31,33 @@ export const ImageSeed : ImageContent = {
         "/icons/icono2.png",
         "/icons/icono3.png",
         "/icons/icono4.png",
+    ],
+    "armarios":[
+    "/armarios/armario1.webp",
+    "/armarios/armario2.webp",
+    "/armarios/armario3.webp",
+    "/armarios/armario4.webp",
+    "/armarios/armario5.webp",
+    "/armarios/armario6.webp",
+
+    ],
+    "baños": [
+    "/baños/baño1.webp",
+    "/baños/baño2.webp",
+    "/baños/baño3.webp",
+    "/baños/baño4.webp",
+    "/baños/baño5.webp",
+    "/baños/baño6.webp",
+    ],
+    "cocinas": [
+    "/cocinas/cocina1.webp",
+    "/cocinas/cocina2.webp",
+    "/cocinas/cocina3.webp",
+    "/cocinas/cocina4.webp",
+    "/cocinas/cocina5.webp",
+    "/cocinas/cocina6.webp",
     ]
 
-
-    
 
 
 }

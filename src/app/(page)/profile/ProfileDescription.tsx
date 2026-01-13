@@ -12,22 +12,23 @@ export const ProfileDescription = () => {
     <h2 className='md:hidden text-2xl md:text-3xl font-semibold text-center mt-5 '>El Paisita</h2>
     {/* <h2 className={`${CaveatStyle.className} order-1 md:order-0 text-2xl md:text-3xl font-bold text-center mt-5 md:mt-0 `}>El Paisita</h2> */}
 
-        <div className='shrink-0  mb-10 md:my-0'>
+        <div className='shrink-0 md:my-0'>
             <Image 
                 src={"/Perfil/profile.webp"}
                 alt={"Profile Image"}
                 width={400}
                 height={400}
-                className=" w-80 h-100 md:w-auto md:h-150  rounded-lg"
+                className=" w-80 h-120 md:w-auto md:h-150  rounded-lg"
             />
 
         </div>
 
         {/* Text Description */}
 
-        <div className='max-w-xl px-5 sm:px-6 md:px-0 mt-4'>
+        <div className='max-w-xl px-5 sm:px-6 md:px-0 mt-4 bg-gray-200'>
 
           <h2 className='hidden md:block text-2xl md:text-3xl font-semibold mb-5 text-center'>El Paisita</h2>
+
         <div className="order-3 max-w-[90%] sm:max-w-xl px-5 sm:px-6 md:px-0 mt-4 md:text-left text-center">
 
   <p className={`${GeistSans.className} leading-relaxed text-base sm:text-lg md:text-xl`}>
