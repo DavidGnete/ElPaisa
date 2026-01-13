@@ -4,7 +4,6 @@ import Image from 'next/image';
 interface ImageContent {
     images: string[];
     headSlide: string[];
-    icon: string[];
     armarios:string[];
     baños:string[];
     cocinas:string[];
@@ -25,12 +24,7 @@ export const ImageSeed : ImageContent = {
         "/head/acabado3.webp",
         "/head/acabado4.webp",
         "/head/acabado5.webp",
-    ],
-    "icon": [
-        "/icons/icono1.png",
-        "/icons/icono2.png",
-        "/icons/icono3.png",
-        "/icons/icono4.png",
+        "/head/acabado6.webp",
     ],
     "armarios":[
     "/armarios/armario1.webp",

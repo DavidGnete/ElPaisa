@@ -24,9 +24,8 @@ export default function Home() {
     <div>    
     <BrandStatement />
 
-      <div className="mb-24">   
         <ProfileDescription />
-        {/* <BrandIcons /> */}
+      <div className=" bg-slate-200  ">   
         <GallerySection
         text = "Cocinas"
         images={ImageSeed.cocinas}/>
@@ -38,10 +37,13 @@ export default function Home() {
         <GallerySection
         text = "baños"
         images={ImageSeed.baños}/>
+        </div>
+
+        
+        <BrandIcons />
 
         <Whattsap />
         <Footer />
-        </div>
 
     </div>
     </main>

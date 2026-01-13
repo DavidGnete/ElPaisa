@@ -1,23 +1,52 @@
 import React from 'react'
-import { ImageSeed } from '@/seed/seed'
+import Image from 'next/image'
 import { Merienda } from 'next/font/google'
 
-import Image from 'next/image'
 
 export const BrandIcons = () => {
   return (
-    <div className='flex gap-60 justify-center items-center mt-20 '>
-        {ImageSeed.icon.map((icon, index)=> (
-            <Image 
-            key={index}
-            width={100}
-            height={90}
-            alt='icons'
-            src={icon}
-            
-            ></Image>
-
-        ))}
+    <div className='flex mt-20 '>
+      <div className='flex items-center flex-col'>
+        <Image 
+        src="/icons/icono1.png"
+        width={200}
+        height={200}
+        alt='icono'>
+        </Image>
+        
+        <h1 className='text-4xl'>El Icono</h1>
+      </div>
+      <div className='flex items-center flex-col'>
+        <Image 
+        src="/icons/icono1.png"
+        width={200}
+        height={200}
+        alt='icono'>
+        </Image>
+        
+        <h1 className='text-4xl'>El Icono</h1>
+      </div>
+      <div className='flex items-center flex-col'>
+        <Image 
+        src="/icons/icono1.png"
+        width={200}
+        height={200}
+        alt='icono'>
+        </Image>
+        
+        <h1 className='text-4xl'>El Icono</h1>
+      </div>
+      <div className='flex items-center flex-col'>
+        <Image 
+        src="/icons/icono1.png"
+        width={200}
+        height={200}
+        alt='icono'>
+        </Image>
+        
+        <h1 className='text-4xl'>El Icono</h1>
+      </div>
+      
     </div>
   )
 }
