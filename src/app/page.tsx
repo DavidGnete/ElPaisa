@@ -41,10 +41,10 @@ export default function Home() {
 
         
         <BrandIcons />
-
+      <div className=" bg-slate-200"> 
         <Whattsap />
         <Footer />
-
+      </div>
     </div>
     </main>
   );
