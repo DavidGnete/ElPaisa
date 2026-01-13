@@ -26,7 +26,7 @@ export default function Home() {
 
       <div className="mb-24">   
         <ProfileDescription />
-        <BrandIcons />
+        {/* <BrandIcons /> */}
         <GallerySection
         text = "Pisos"
         images={ImageSeed.images}/>
