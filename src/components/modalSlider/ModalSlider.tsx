@@ -20,7 +20,8 @@ export const ModalSlider = ({ onClose, image, indexStart }: ModalSliderProps) =>
     >
       {/* Contenedor del modal */}
       <div
-        className="relative w-full max-w-6xl h-[80vh] rounded-lg shadow-lg overflow-hidden"
+        className="relative w-full max-w-6xl h-[70vh] sm:h-[80vh]
+          lg:h-[85vh] shadow-lg overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Botón cerrar */}
