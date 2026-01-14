@@ -7,9 +7,10 @@ import { useState } from "react";
 interface PhotoGalleryProps {
     images: string[];
     text: string;
+    id:string
 }
 
-export const GallerySection = ({ images, text }: PhotoGalleryProps) => {
+export const GallerySection = ({ images, text, id }: PhotoGalleryProps) => {
 
   const [openslide, setopenSlide] = useState(false);
   const [startPhoto, setstartPhoto] = useState(0);
@@ -24,7 +25,9 @@ export const GallerySection = ({ images, text }: PhotoGalleryProps) => {
   };
 
   return (
-    <section className='max-w-7xl mx-auto px-4 sm:px-6 py-10'>
+    <section 
+    id={id}
+    className='scroll-mt-32 max-w-7xl mx-auto px-4 sm:px-6 py-10'>
         <h2 className="text-3xl font-semibold sm:text-4xl md:text-5xl tracking-wide text-zinc-900 text-center">{text}</h2>
         <div className="flex flex-col items-center mt-4 mb-5 gap-2">
  <div className="w-40 h-px bg-amber-900" />

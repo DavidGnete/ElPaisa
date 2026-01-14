@@ -4,22 +4,34 @@ import React from 'react'
 import Image from 'next/image';
 
 export const Whattsap = () => {
-const WhattsapNumber = "+573108006524"
+const WhattsapNumber = "+573224616148"
 
 const handleClick = () => {
-  const mesage = encodeURIComponent("Hola estoy interesado..")
+  const mesage = encodeURIComponent("Hola, vi su anuncio en la pagina web El Paisa y estoy interesado en un servicio de interiores")
   window.open(`https://wa.me/${WhattsapNumber}?text= ${mesage}`, "_blank");
 }
   return (
-    <div>
+    
         <div onClick={handleClick}
-        className="fixed 
+        className="
+        fixed
         bottom-4 right-4
         sm:bottom-6 sm:right-6
-        md:bottom-30 md:right-30
+        z-50
+
+        flex items-center gap-3
+        px-2 py-1
+        sm:px-5 sm:py-3.5
+
+      bg-green-400
+        text-white
+        rounded-full
+        shadow-lg
+
         cursor-pointer
-        transition-transform duration-300 ease-out
-        hover:-translate-y-0.5">
+        transition-all duration-300 ease-out
+        hover:scale-105
+        hover:shadow-xl">
         <Image 
         width={90}
         height={80}
@@ -27,8 +39,14 @@ const handleClick = () => {
         className='w-12 h-12
           sm:w-14 sm:h-14
           md:w-20 md:h-20'
-        src="/whattsap/whatsapp.svg"></Image>
+        src="/whattsap/whatsapp.svg">
+
+        </Image>
+
+         <div className="hidden sm:flex flex-col leading-tight">
+        <span className="text-sm font-medium">Escríbenos por WhatsApp</span>
+        <span className="text-xs opacity-90">Respuesta rápida</span>
+      </div>
         </div>
-    </div>
   )
 }

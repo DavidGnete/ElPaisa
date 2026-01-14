@@ -19,7 +19,7 @@ export const HeadTitle = () => {
     El Paisita
   </p>
   <p className={`${StyleAlumin.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-light m-0 -mt-1 sm:-mt-2`}>
-    INTERIORES
+    DISEÑO INTERIORES
   </p>
 </div>
     </Link>

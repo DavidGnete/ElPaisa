@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const BrandIcons = () => {
   return (
-    <section className="w-full mt-20 px-6">
+    <section className="w-full mt-20 px-6 mb-10">
       
       {/* TÍTULO */}
       <div className="text-center mb-12">
@@ -12,7 +12,8 @@ export const BrandIcons = () => {
           font-semibold 
           text-zinc-900
         ">
-          No esperes más, solicita tu cita
+          No esperes más, solicita tu cita <br></br>
+          por whattsap
         </h2>
       </div>
 
@@ -28,14 +29,14 @@ export const BrandIcons = () => {
         {/* ICONO 2 */}
         <div className="flex flex-col items-center text-center max-w-xs">
           <Image 
-            src="/icons/icono2.png"
+            src="/icons/icono5.png"
             width={90}
             height={90}
             alt="Maderas seleccionadas"
             className="mb-4"
           />
           <h3 className="text-lg font-medium text-zinc-800">
-            Maderas seleccionadas
+            10+ años de experiencia
           </h3>
         </div>
 
@@ -56,14 +57,14 @@ export const BrandIcons = () => {
         {/* ICONO 4 */}
         <div className="flex flex-col items-center text-center max-w-xs">
           <Image 
-            src="/icons/icono5.png"
+            src="/icons/icono2.png"
             width={90}
             height={90}
             alt="10 años de experiencia"
             className="mb-4"
           />
           <h3 className="text-lg font-medium text-zinc-800">
-            10+ años de experiencia
+            Maderas seleccionadas
           </h3>
         </div>
 

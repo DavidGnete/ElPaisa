@@ -66,8 +66,12 @@ return (
         text-white font-extrabold 
         leading-tight'>Diseño, precisión y tradición</h1>
     
-    <button className=' sm:mt-4 
-    
+    <button
+    onClick={() => {
+        const section = document.getElementById('portafolio');
+        section?.scrollIntoView({behavior: 'smooth'});
+    }}
+    className=' sm:mt-4
     px-7 py-3
     sm:px-8 sm:py-4
     lg:px-10 lg:py-5
