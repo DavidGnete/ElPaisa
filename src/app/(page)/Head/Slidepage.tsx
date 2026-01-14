@@ -59,7 +59,7 @@ return (
 
     <div className='absolute
     inset-x-0
-    bottom-10
+    bottom-15
     sm:bottom-14
     lg:bottom-20
     flex
@@ -78,7 +78,7 @@ return (
       text-white
       font-extrabold
       leading-tight
-      max-w-4xl'>Cocinas integrales Diseño Interiores</h1>
+      max-w-4xl'>Cocinas integrales <br></br> Diseño Interiores</h1>
     
     <button
     onClick={() => {
