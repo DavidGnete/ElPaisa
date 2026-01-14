@@ -7,7 +7,7 @@ export const Whattsap = () => {
 const WhattsapNumber = "+573224616148"
 
 const handleClick = () => {
-  const mesage = encodeURIComponent("Hola, vi su anuncio en la pagina web El Paisa y estoy interesado en un servicio de interiores")
+  const mesage = encodeURIComponent("Hola, vi su información en la página web y me gustaría cotizar un proyecto de acabados en madera. Muchas gracias." )
   window.open(`https://wa.me/${WhattsapNumber}?text= ${mesage}`, "_blank");
 }
   return (

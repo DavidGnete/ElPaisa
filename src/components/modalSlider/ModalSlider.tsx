@@ -2,57 +2,65 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-
-
-import "swiper/css";
+/* import "swiper/css"; */
 import "swiper/css/navigation";
-
+import './modalSlide.css';
 
 interface ModalSliderProps {
-    image: string[];
-    indexStart: number;
-    onClose: () => void;
-    
+  image: string[];
+  indexStart: number;
+  onClose: () => void;
 }
 
-export const ModalSlider = ({ onClose, image, indexStart}: ModalSliderProps) => {
+export const ModalSlider = ({ onClose, image, indexStart }: ModalSliderProps) => {
   return (
     <div
-    className='fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4'
-    onClick={onClose}
+      className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4"
+      onClick={onClose}
     >
-   {/*  contenedor del modal */}
-    <div className='relative w-full max-w-7xl  bg-black/90 rounded-lg shadow-lg flex items-center justify-center'
-    onClick={(e) => e.stopPropagation()}>
+      {/* Contenedor del modal */}
+      <div
+        className="relative w-full max-w-6xl h-[80vh] rounded-lg shadow-lg overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Botón cerrar */}
+        <button
+          onClick={onClose}
+          className="absolute  right-2 z-50
+    flex items-center justify-center
+    w-20 h-20 text-4xl
+    sm:w-10 sm:h-10 sm:text-4xl
+    lg:w-12 lg:h-12 lg:text-6xl
+    text-white
+    rounded-full
+    cursor-pointer"
+        >
+          ×
+        </button>
 
-    {/* Boton de cerrar */}
-    <button
-    onClick={onClose}
-    className='absolute top-4 right-4 z-50 text-white text-2xl font-bold hover:text-red-500 transition'>
-    X
-    </button>
-
-            <Swiper
-            modules={[Navigation]}
-            navigation
-            loop
-            initialSlide={indexStart}
-            className='w-full h-full'
-            >
-                {image.map((img, i) => (
-                    <SwiperSlide key={img}>
-                    <div className='flex items-center justify-center w-full h-full'>
-                        <Image
-                        src={img}
-                        width={500}
-                        height={300}
-                        alt={`Slide ${i + 1}`}
-                        className='object-contain max-h-[80vh] rounded-lg' />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            </div>
+        {/* Slider */}
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          loop
+          initialSlide={indexStart}
+          className="w-full h-full"
+        >
+          {image.map((img, i) => (
+            <SwiperSlide key={img}>
+              <div className="flex items-center justify-center w-full h-full">
+                <Image
+                  src={img}
+                  alt={`Slide ${i + 1}`}
+                  fill
+                  className="object-contain p-6"
+                  sizes="(max-width: 768px) 100vw, 80vw"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

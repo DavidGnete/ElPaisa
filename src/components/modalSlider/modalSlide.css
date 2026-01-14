@@ -1,0 +1,14 @@
+.mySwiper {
+  width: 100%;
+  height: 100vh;
+  --swiper-navigation-color: #ffffff;
+}
+
+.slide-container {
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* o el color que quieras */
+}
