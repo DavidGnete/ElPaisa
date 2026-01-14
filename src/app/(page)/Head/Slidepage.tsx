@@ -30,58 +30,62 @@ return (
         speed={2500}
         navigation
         loop
-        autoplay={{delay: 5000, disableOnInteraction: false,}}
+        autoplay={{delay: 4000, disableOnInteraction: false,}}
         centeredSlides={true}
         modules={[EffectFade, Navigation,  Autoplay]}
-        className="mySwiper"
+        className="mySwiper w-full h-full"
     
     >
     {
     images.map( image=>(
-        <SwiperSlide key={image} className='relative w-full '>
-
+        <SwiperSlide key={image} className='relative w-full h-[70vh] sm:h-[80vh] lg:h-[65vh] xl:h-[70vh]'>
+            <div className=''>   
             <Image
             src={image}
             alt={title}
             fill
             quality={100} 
-            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw'
-            className='object-cover'>
+            sizes=' 100vw'
+            className=' object-cover
+    object-center
+    lg:object-center'>
             </Image>
           
             <div className="absolute inset-0 bg-black/30" />
-        </SwiperSlide>
+        </div>
+    </SwiperSlide>
     ))}
     </Swiper>
 
-    <div className='flex flex-col justify-center items-center
-    absolute
-  top-[85%] md:top-2/3
-  lg:top-[90%] lg:bottom-50 
-  left-1/2
-  transform -translate-x-1/2 -translate-y-1/2
-  w-[95%] sm:w-[85%] md:w-[80%] lg:w-[95%]
-  gap-4 text-left z-20 px-10'>
-        <h1 className='text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 
-        text-white font-extrabold 
-        leading-tight'>Diseño, precisión y tradición</h1>
+    <div className='absolute
+    inset-x-0
+    bottom-10
+    sm:bottom-14
+    lg:bottom-20
+    flex
+    flex-col
+    items-center
+    gap-4
+    z-20
+    px-6
+    sm:px-10
+    text-center'>
+        <h1 className='text-2xl
+      sm:text-4xl
+      md:text-4xl
+      lg:text-4xl
+      xl:text-4xl
+      text-white
+      font-extrabold
+      leading-tight
+      max-w-4xl'>Cocinas integrales Diseño Interiores</h1>
     
     <button
     onClick={() => {
         const section = document.getElementById('portafolio');
         section?.scrollIntoView({behavior: 'smooth'});
     }}
-    className=' sm:mt-4
-    px-7 py-3
-    sm:px-8 sm:py-4
-    lg:px-10 lg:py-5
-    sm:text-lg lg:text-xl
-    cursor-pointer
-    text-black
-    bg-white/50
-    shadow-[0_0_40px_rgba(0,0,0,0.5)]
-    transition-all duration-300
-    hover:scale-105'>
+    className=' px-7 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 sm:text-lg lg:text-xl bg-white/50 text-black'>
         PORTAFOLIO
     </button>
 </div>

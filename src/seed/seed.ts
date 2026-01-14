@@ -20,17 +20,18 @@ export const ImageSeed : ImageContent = {
         
     ],
     "headSlide": [
-        "/head/acabado2.webp",
+        "/head/slide2.webp",
         "/head/acabado3.webp",
         "/head/acabado4.webp",
         "/head/acabado5.webp",
         "/head/acabado6.webp",
+        "/head/slide3.webp",
     ],
     "armarios":[
     "/armarios/armario1.webp",
     "/armarios/armario2.webp",
-    "/armarios/armario3.webp",
-    "/armarios/armario4.webp",
+    "/armarios/armarioo3.webp",
+    "/armarios/armarioo4.webp",
     "/armarios/armario5.webp",
     "/armarios/armario6.webp",
 
@@ -38,9 +39,9 @@ export const ImageSeed : ImageContent = {
     "baños": [
     "/baños/baño1.webp",
     "/baños/baño2.webp",
-    "/baños/baño3.webp",
-    "/baños/baño4.webp",
-    "/baños/baño5.webp",
+    "/baños/bañoo3.webp",
+    "/baños/bañoo4.webp",
+    "/baños/bañoo5.webp",
     "/baños/baño6.webp",
     ],
     "cocinas": [
