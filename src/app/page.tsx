@@ -25,18 +25,21 @@ export default function Home() {
     <BrandStatement />
 
         <ProfileDescription />
-      <div className=" bg-slate-200  ">   
+      <div className=" bg-slate-200 ">   
         <GallerySection
         text = "Cocinas"
         images={ImageSeed.cocinas}/>
 
+        {/* segunda galleria */}
         <GallerySection
-        text = "armarios"
+        text = "Armarios"
         images={ImageSeed.armarios}/>
-
+        
+       {/*  tercera galleria */}
         <GallerySection
-        text = "baños"
+        text = "Baños"
         images={ImageSeed.baños}/>
+
         </div>
 
         

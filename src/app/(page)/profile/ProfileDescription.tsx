@@ -24,22 +24,25 @@ export const ProfileDescription = () => {
 
         <div className='max-w-xl px-5  md:px-0 mt-4 bg-slate-100 md:bg-transparent'>
 
-        <div className="order-3 max-w-[90%] sm:max-w-xl px-5 sm:px-6 md:px-0 mt-4 md:text-left text-center">
+        <div className="max-w-[90%] sm:max-w-xl px-4 sm:px-6 md:px-0 mt-4 md:text-left text-center">
 
   <p className={`${StyleSpectral.className} leading-relaxed text-base sm:text-lg md:text-xl`}>
     Soy Eduard, maestro y diseñador en acabados interiores en madera y fundador de 
     <span className="font-semibold">   El Paisita</span>, con más de 10 años de experiencia
-    transformando espacios en lugares cálidos, funcionales y llenos de carácter.
+    transformando espacios en lugares cálidos y funcionales.
   </p>
 
   <p className={`${StyleSpectral.className} leading-relaxed text-base sm:text-lg md:text-xl mt-4`}>
     Cocinas, salas, pisos y espacios interiores toman vida cuando se hacen con pasión,
     compromiso y respeto por el trabajo bien hecho.
   </p>
-
-  <p className={`${CaveatStyle.className} text-3xl sm:text-4xl font-normal mt-6`}>
+    <div className='flex flex-col justify-center'>  
+  <p className={`${CaveatStyle.className}  text-center text-3xl sm:text-4xl font-normal mt-6`}>
     Ave maría, qué buen acabado.
   </p>
+  <div  className="w-full max-w-md mb-5 sm:max-w-xl h-px bg-gray-300 sm:mb-5 " />
+  <div  className="w-[50%]  ml-20 sm:max-w-xl h-px bg-gray-300 mb-8 sm:mb-10 sm:ml-30 " />
+  </div>
 
 </div>
 

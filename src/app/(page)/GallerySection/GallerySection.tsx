@@ -24,11 +24,11 @@ export const GallerySection = ({ images, text }: PhotoGalleryProps) => {
   };
 
   return (
-    <section className='max-w-7xl mx-auto px-4 sm:px-6 py-16'>
+    <section className='max-w-7xl mx-auto px-4 sm:px-6 py-10'>
         <h2 className="text-3xl font-semibold sm:text-4xl md:text-5xl tracking-wide text-zinc-900 text-center">{text}</h2>
         <div className="flex flex-col items-center mt-4 mb-5 gap-2">
- <div className="w-32 h-[3px] bg-amber-700" />
-<div className="w-16 h-px bg-amber-400" />
+ <div className="w-40 h-px bg-amber-900" />
+<div className="w-16 h-px bg-amber-900" />
 </div>
 
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-8">

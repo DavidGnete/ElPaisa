@@ -3,7 +3,7 @@ import { StyleSpectral } from '@/config/fonts';
 
 export const BrandStatement = () => {
   return (
-    <div className='w-full bg-slate-100 pb-10 sm:py-16'> 
+    <div className='w-full py-10 bg-slate-100 pb-10 sm:py-16 '> 
 
       <div className='md:mt-10 w-full flex flex-col items-center '>
         
