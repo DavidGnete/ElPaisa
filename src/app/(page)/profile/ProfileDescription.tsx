@@ -29,12 +29,12 @@ export const ProfileDescription = () => {
   <p className={`${StyleSpectral.className} leading-relaxed text-base sm:text-lg md:text-xl`}>
     Soy Eduard, maestro y diseñador en acabados interiores en madera y fundador de 
     <span className="font-semibold">   El Paisita</span>, con más de 10 años de experiencia
-    transformando espacios en lugares cálidos y funcionales.
+    creando espacios calidos, funcionales y hechos para durar.
   </p>
 
   <p className={`${StyleSpectral.className} leading-relaxed text-base sm:text-lg md:text-xl mt-4`}>
-    Cocinas, salas, pisos y espacios interiores toman vida cuando se hacen con pasión,
-    compromiso y respeto por el trabajo bien hecho.
+    Cocinas, salas, pisos y espacios interiores toman vida cuando se trabajan con pasión,
+    compromiso y un profundo respeto por el oficio y el detalle.
   </p>
     <div className='flex flex-col justify-center'>  
   <p className={`${CaveatStyle.className}  text-center text-3xl sm:text-4xl font-normal mt-6`}>
