@@ -85,7 +85,7 @@ return (
         const section = document.getElementById('portafolio');
         section?.scrollIntoView({behavior: 'smooth'});
     }}
-    className=' px-7 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 sm:text-lg lg:text-xl bg-white/50 text-black'>
+    className=' px-7 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 sm:text-lg lg:text-xl bg-white/50 text-black cursor-pointer'>
         PORTAFOLIO
     </button>
 </div>
