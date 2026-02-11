@@ -1,3 +1,4 @@
+"use client";
 import { ImageSeed } from "@/seed/seed";
 
 import { HeadSlide } from "./(page)/Head/Slidepage";
